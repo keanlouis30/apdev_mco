@@ -1,26 +1,36 @@
 body{
+    margin: 0;
     background-color: #eecb87;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    padding: 45px;
+    gap: 100px;
+}
+
+.desc{
+    width: 45%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.desc>img{
+    height: 400px;
+    width: 100%;
 }
 
 .loginbg{
-    width: 450px;
-    height: 622px;
+    width: 45%;
+    height: 100%;
+    padding: 50px;
     background-color: #b83f60;
     border-radius: 20px;
     box-shadow: 
         5px 10px 0px rgba(0, 0, 0, 0.5),
         inset 5px 10px 0px rgba(0, 0, 0, 0.1);
-}
-
-body, html{
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-content: space-between;
 }
 
 .signin{
@@ -51,7 +61,7 @@ body, html{
 
 #forgotpassword{
     font-family: 'Roboto';
-    color: #eecb87;
+    color: white;
     margin: 0;
 }
 
@@ -67,6 +77,6 @@ a:link, a:visited, a:active{
     padding-left: 8px;
     margin: 8px 0;
     box-sizing: border-box;
-    background-color: #eee2b0;
+    background-color: white;
     border-radius: 5px;
 }
