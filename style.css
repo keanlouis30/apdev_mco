@@ -1,12 +1,26 @@
+html{
+    height: 100vh;
+}
+
 body{
+    height: 80% ; /* bcuz the padding will create extra space around*/
+    margin: 0;
     background-color: #eecb87;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 45px;
+    gap: 100px;
     align-items: center;
 }
 
-.loginbg{
-    width: 450px;
-    height: 622px;
+.desc{
+    width: 45%;
+    height: 100% - 40px; /* total height - total vertical padding*/
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
     background-color: #b83f60;
     border-radius: 20px;
     box-shadow: 
@@ -14,12 +28,23 @@ body{
         inset 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-body, html{
+.desc>img{
+    height: 350px;
+    width: 100%;
+}
+
+.desc > p{
+    color: #eecb87;
+}
+
+.loginbg{
+    width: 40%;
     height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-content: space-between;
+    background-color: #b83f60;
+    border-radius: 20px;
+    box-shadow: 
+        5px 10px 0px rgba(0, 0, 0, 0.5),
+        inset 5px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .signin{
@@ -50,7 +75,7 @@ body, html{
 
 #forgotpassword{
     font-family: 'Roboto';
-    color: #eecb87;
+    color: white;
     margin: 0;
 }
 
@@ -66,6 +91,6 @@ a:link, a:visited, a:active{
     padding-left: 8px;
     margin: 8px 0;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 5px;
 }
