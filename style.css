@@ -5,13 +5,13 @@ html{
 body{
     height: 80% ; /* bcuz the padding will create extra space around*/
     margin: 0;
-    background-color: #eecb87;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 45px;
     gap: 100px;
     align-items: center;
+    background-image: url('bg.png');
 }
 
 .desc{
