@@ -1,21 +1,40 @@
 body{
-    height: 80% ; /* bcuz the padding will create extra space around*/
+    height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0px;
-    gap: 0px;
-    align-items: center;
-    background-image: url('bg.png');
 }
 
 .header{
-    height: 100px;
+    height: 20%;
     width: 100%;
     background-color: white;
     margin: 0;
     padding: 0;
     box-shadow: 
         2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.header, .left, .sheets, .right{
+    border: solid 1px black;
+    border-radius: 50px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.left, .right{
+    width: 25%;
+    height: 100%;
+}
+
+.sheets{
+    width: 50%;
+    height: 100%;
 }
