@@ -1,0 +1,21 @@
+body{
+    height: 80% ; /* bcuz the padding will create extra space around*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+    gap: 0px;
+    align-items: center;
+    background-image: url('bg.png');
+}
+
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-shadow: 
+        2px 5px 1px rgba(0, 0, 0, 0.5);
+}
