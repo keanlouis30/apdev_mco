@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="hlstyles.css">
+    <link rel="stylesheet" href="userprofilestyles.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gidole-regular" type="text/css"/>
 </head>
 <body>
+    
     <div id="header">
         <div id="logodiv">
             <a href="homelog.html"><img id="logo" src="logo2.png"></a>
@@ -16,12 +17,12 @@
                     <img id="dp" src="profilepic.png">
                 </div>
                 <div id="profiletext">
-                    <p>Username</p>
-                    <p>Bio</p>
+                    <p id="username">Username</p>
+                    <p id="bio">Bio</p>
                 </div>
                 <div id="buttons1">
-                    <button class="editbuttons" id="ebutton1">Edit</button>
-                    <button class="savebuttons" id="ebutton2">Save</button>
+                    <button type="submit" class="editbuttons" id="editbutton1">Edit</button>
+                    <button type="submit" class="savebuttons" id="savebutton1">Save</button>
                 </div>
             </div>
             <div class="rectholder" id="badgerep">
@@ -55,8 +56,8 @@
                     </table>
                 </div>
                 <div id="buttons2">
-                    <button class="editbuttons" id="ebutton1">Edit</button>
-                    <button class="savebuttons" id="ebutton2">Save</button>
+                    <button type="submit" class="editbuttons" id="editbutton2">Edit</button>
+                    <button type="submit" class="savebuttons" id="savebutton2">Save</button>
                 </div>
             </div>
             <div id="divide">
@@ -79,6 +80,6 @@
             </div>
         </div>
     </div>
-    
+    <script type="text/javascript" src="userprofilejs.js"></script>
 </body>
 </html>
