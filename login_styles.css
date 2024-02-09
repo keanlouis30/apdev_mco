@@ -51,7 +51,7 @@ h1 {
     align-items: center;
 }
 
-form {
+.login-form {
     /* border: 1px yellow solid; */
     height: 100%;
     width: 100%;
