@@ -41,6 +41,7 @@ body{
     align-items: center;
     align-content: center;
     font-family: 'Source Code Pro';
+    font-size: 30px;
 }
 
 #dp{
@@ -79,10 +80,15 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: Chivo;
-    transition-duration: 0.4s;
+    transition-duration: 0.1s;
+    font-size: 20px;
 }
 
 .settingsbuttons:hover{
     background-color: black;
     color: white;
+}
+
+.settingsbuttons:active{
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
 }
