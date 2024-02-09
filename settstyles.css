@@ -1,0 +1,94 @@
+html{
+    background-image: url("bg3.png");
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+#body{
+    height: 100%;
+    width: 90%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    display: flex;
+}
+
+#leftpane{
+    height: 100%;
+    width: 25%;
+    border-right: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#profile{
+    height: 30%;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family: 'Source Code Pro';
+    font-size: 30px;
+}
+
+#dp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#dpimg{
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+#settings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.settingsbuttons{
+    width: 95%;
+    text-align: left;
+    padding-left: 30px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-right: 0px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Chivo;
+    transition-duration: 0.1s;
+    font-size: 20px;
+}
+
+.settingsbuttons:hover{
+    background-color: black;
+    color: white;
+}
+
+.settingsbuttons:active{
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
+}
