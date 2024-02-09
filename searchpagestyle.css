@@ -1,0 +1,30 @@
+html{
+    background-image: url("bg3.png");
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#header{
+    background-image: url("header.png");
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#search{
+    padding-left: 20px;
+    padding-right: 550px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
