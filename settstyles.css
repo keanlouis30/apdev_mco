@@ -2,107 +2,87 @@ html{
     background-image: url("bg3.png");
 }
 
-#header{
-    display: flex;
-    width: 98%;
-    height: 100%;
-    background-color: white;
-    margin-bottom: 20px;
-    padding: 10px;
-    padding-top: 15px;
-    padding-left: 15px;
-    box-shadow: 0px 10px 10px 0px rgb(59, 59, 59);
-    border-radius: 25px;
-    align-items: center;
-}
-
 body{
-    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
-    padding: 20px;
+    align-content: center;
+    height: 100%;
 }
 
 #body{
-    width: 90%;
     height: 100%;
+    width: 90%;
     background-color: white;
     border-radius: 25px;
-    box-shadow: 0px 10px 10px 0px rgb(0, 0, 0);
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
-#logodiv{
-    width: 10%;
+#leftpane{
     height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-#logo{
-    height: 100%;
-    width: 100%;
-}
-
-#settingspane{
-    display: flex;
-    flex-direction: column;
     width: 25%;
     border-right: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#profile{
+    height: 30%;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 100%;
-}
-
-#configs{
-    display: flex;
-    width: 75%;
-    margin-left: 10px;
+    font-family: 'Source Code Pro';
 }
 
 #dp{
-    border-radius: 50%;
-    margin: 5px;
-    height: 50%;
-    width: 50%;
-}
-
-#profilepicdiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 5px;
-    font-family: 'Chivo';
+}
+
+#dpimg{
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
 }
 
 #settings{
     width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    padding: 5px; 
+    justify-content: flex-start;
+    padding-left: 5%;
 }
 
-.settingsholders{
+.settingsbuttons{
+    width: 95%;
+    text-align: left;
+    padding-left: 30px;
+    background-color: transparent;
     border: 2px solid black;
     border-right: 0px;
-    margin-left: 10px;
-    margin-bottom: 1px;
-    margin-top: 1px;
-    border-radius: 0px;
-    padding-left: 30px;
-    font-family: 'Chivo';
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Chivo;
+    transition-duration: 0.4s;
+}
+
+.settingsbuttons:hover{
+    background-color: black;
+    color: white;
 }
