@@ -110,7 +110,6 @@ h1 {
 
 input[type="submit"]{
     outline: none;
-    width: 100%;
     border-radius: 25px;
     padding: 10px 0;
     font-family: 'Comfortaa';
@@ -119,6 +118,10 @@ input[type="submit"]{
     color: white;
     background-color: var(--brown);
     cursor: pointer;
+}
+
+#login{   
+    width: 100%;
 }
 
 input[type="submit"]:hover{
