@@ -7,8 +7,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open mco_login.html",
-            "file": "c:\\Users\\keanl\\Documents\\GitHub\\apdev_mco\\mco_login.html"
+            "name": "Open searchpage.html",
+            "file": "c:\\Users\\keanl\\Documents\\GitHub\\apdev_mco\\searchpage.html"
         }
     ]
 }
