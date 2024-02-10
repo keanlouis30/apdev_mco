@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 11:50pm Feb 09 -->
+
+<html>
+    <head>
+        <title>Register Page</title>
+        <link rel="stylesheet" href="login_styles.css">
+        <link rel="stylesheet" href="register_styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    </head>
+
+    <body>
+        <form class="register-form">
+
+        <div class="basic-info shadow">
+            <h2>register</h2>
+            <div class="info">
+                <p class="label" >last name:*</p>
+                <input type="text" class="text" placeholder="Dela Cruz">
+            </div>
+            <div class="info">
+                <p class="label" >first name:*</p>
+                <input type="text" class="text" placeholder="Juan">
+            </div>
+            <div class="info">
+                <p class="label" >email address:*</p>
+                <input type="text" class="text" placeholder="dcjuan@mail.com">
+            </div>
+            <div class="info">
+                <p class="label" >mobile number:</p>
+                <input type="text" class="text" placeholder="0917-xxxxxx">
+            </div>
+            <span class="pass-todo">Password must be at least 8 characters long. Include alphanumeric & special characters.</span>
+            <div class="info">
+                <p class="label" >password:*</p>
+                <input type="text" class="text" placeholder="Enter password">
+            </div>
+            <div class="info">
+                <p class="label" >confirm password:*</p>
+                <input type="text" class="text" placeholder="Repeat password">
+            </div>
+            
+        </div>
+        <div class="user-bio shadow">
+            <div class="ub-info">
+                    <span class="pass-todo">Username must be at least 5 characters long. No special characters aside from underscores.</span>        
+                    <div class="info">
+                    <p class="label" >username:*</p>
+                    <input type="text" class="text" placeholder="Ex. User_n4m3">
+                </div>
+                <div class="bio">
+                    <p class="bio-label" >bio:
+                    <span class="todo">255 char limit. You may change this later.</span></p>
+                    <textarea class="text-bio" placeholder="Write something..."></textarea>
+                </div>
+            </div>
+
+
+            <div class="agree">
+                <input type="checkbox" for="agree">
+                <label name="agree">I agree with the <a>Terms & Conditions</a></label>    
+            </div>
+               
+            <input type="submit" value="register" id="register">
+           
+        </div>
+
+        
+        </form>
+       
+    </body>
+</html>
