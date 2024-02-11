@@ -116,7 +116,13 @@ body{
 }
 
 #dp{
+    background-image: url("profilepic.png");
+    background-size: 100%;
     border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+    border: 1px solid black;
 }
 
 #profiletext{
@@ -127,6 +133,7 @@ body{
 
 .albumimage{
     margin-top: 3px;
+    margin-bottom: 3px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
@@ -145,9 +152,15 @@ body{
     width: 100%;
 }
 
-#dp{
-    height: 200px;
-    width: 200px;
+
+#profilepic{
+    transition-duration: 0.5s;
+}
+
+#dp:hover{
+    background-image: none;
+    background-color: #eef5ee;
+    cursor: pointer;
 }
 
 p{
@@ -156,6 +169,13 @@ p{
 
 #deetstable{
     text-align: left;
+}
+
+td{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .editbuttons, .savebuttons{
