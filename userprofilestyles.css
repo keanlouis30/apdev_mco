@@ -60,6 +60,7 @@ body{
     position: sticky;
     align-self: flex-start;
     top: 0;
+    padding-top: 10px;
 }
 
 #secondcol{
@@ -67,8 +68,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 50%
-    
+    width: 50%;
 }
 
 #details{
