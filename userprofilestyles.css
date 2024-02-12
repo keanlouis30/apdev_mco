@@ -57,6 +57,9 @@ body{
     width: 40%;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
 }
 
 #secondcol{
@@ -103,6 +106,7 @@ body{
     padding-bottom: 10px;
     padding-left: 0;
     padding-right: 0;
+    
 }
 
 #body{
