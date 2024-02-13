@@ -21,3 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
         user_bio_SB.style.cursor = "not-allowed";
     });
 });
+
+
+document.querySelector('#firstcol').style.height = getComputedStyle(document.getElementById('body')).height
