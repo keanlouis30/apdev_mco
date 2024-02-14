@@ -3,7 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const profilebio = document.getElementById("bio");
     const user_bio_EB = document.getElementById("editbutton1");
     const user_bio_SB = document.getElementById("savebutton1");
+    let profilePic = document.getElementById("dp");
+    let inputfile = document.getElementById("input-file");
 
+    inputfile.onchange = function(){
+        profilePic.src = URL.createObjectURL(inputfile.files[0]);
+    };
     
     user_bio_EB.addEventListener("click", function () {
         profileusername.contentEditable = true;
@@ -20,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
         profilebio.style.backgroundColor = "#ffffff";
         user_bio_SB.style.cursor = "not-allowed";
     });
+
+
 });
 
 
