@@ -1,7 +1,7 @@
 /* 
     <div id="header">
         <div id="logodiv">
-            <a href="homelog.html"><img id="logo" src="logo2.png"></a>
+            <a href="homelog.html"><img id="logo" src="logo4.png"></a>
         </div>
     </div> 
 */
@@ -20,10 +20,12 @@
     display: flex;
     width: 100%;
     height: 20%;
-    background-color: #eef5ee;
+    background-color: #0c3a2d;
     position: sticky;
     top: 0;
     z-index: 0;
+    margin-bottom: 15px;
+    border-bottom: 3px solid white;
 }
 
 #logodiv{
@@ -31,5 +33,5 @@
     height: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 15px;
 }
