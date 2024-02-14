@@ -1,0 +1,361 @@
+:root {
+    --yellow: #FFB804;
+    --brown: #BB8A52;
+    --green: #0C3A2D;
+    --yellow-translucent: rgb(255, 184, 4, 0.6);
+    --green-translucent: rgb(12, 58, 45, 0.6);
+}
+
+html {
+    background-image: url("bg3.png");
+    min-width: 1250px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa';
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.header{
+    width: 100%-60px;
+    height: 55px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    top: 100px;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 30%
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: var(--green);
+    border-radius: 100%;
+}
+
+.searcharea{
+    display: flex;
+    flex-direction: row;
+    border: var(--green) 0.5px solid;
+    border-radius: 15px;
+    width: 85%;
+    height: 35px;
+}
+
+.searchbox{
+    width: 90%;
+    border: none;
+    padding-left: 5px;
+    background: none;
+    outline: none;
+    height: 35px;
+    font-size: 15px;
+    font-family: 'Comfortaa';
+}
+
+.search{
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    border: none;
+    background: url(https://openclipart.org/image/2400px/svg_to_png/213239/Search-icon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; /*horizontal vertical*/
+}
+
+
+.logout{
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.logout:hover{
+    background-color: var(--green);
+    color: var(--yellow);
+    font-weight: bolder;
+}
+
+.contents{
+    display: flex;
+    flex-direction: row;
+    height: 85%;
+    padding: 20px 20px 0 20px;
+    gap: 2%;
+}
+
+.main, .stories{
+    border: none;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    
+}
+
+.main{
+    width: 75%;
+    background-color: var(--green-translucent);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 2%;
+    gap: 2%;
+}
+
+h2{
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.topics{
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0 ;
+    width: 25%;
+    margin: 25px 0;
+}
+
+.topic-list{
+    /* border: solid 1px var(--yellow); */
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    background-color: none; 
+    color: var(--green);
+    font-weight: 20px; 
+    border-radius: 50px;
+    padding: 8px;
+    margin: 0; 
+    transition: background-color 0.3s, color 0.3s, font-weight 0.3s; 
+}
+
+.comm-name:hover, .topic-name:hover {
+    background-color: var(--yellow);
+    color: var(--green);
+    font-weight: bolder;
+}
+
+/* .topic-name:hover {
+    background-color: var(--green);
+    color: var(--yellow);
+    font-weight: bolder;
+} */
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    align-items: center;
+}
+
+.aside-button{
+    width: 80%;
+    outline: none;
+    border-radius: 15px;
+    padding: 10px 0;
+    font-family: 'Comfortaa';
+    border: none;
+    font-size: 15px;
+    color: white;
+    background-color: var(--brown);
+    cursor: pointer;
+}
+
+.aside-button:hover{
+    background-color:  var(--green);
+    color: var(--yellow);
+}
+
+.forum{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 5%;
+    flex: 1;
+
+    /* border: 1px white solid;
+     */
+
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding-right: 10px;
+    margin-right: -20px;
+    
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+.forum::-webkit-scrollbar {
+    width: 10px;
+}
+.forum::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+.post:first-of-type{
+    padding-top: 25px;
+}
+
+.post:last-of-type{
+    padding-bottom: 25px;
+}
+
+.post{
+    display: flex;
+    flex-direction: row;
+}
+
+.post-interactions{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.rating{
+    
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.comment-button{
+    width: 45%;
+    height: 30px;
+    background-color: var(--brown);
+    font-family: 'Comfortaa';
+    color:  white;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    border:none;
+    padding: 5px;
+
+}
+
+
+.like, .dislike, .share {
+    filter: grayscale(100%);
+    height: 30px;
+    width: 30px;
+}
+
+/* Color when clicked */
+
+    .like.clicked, .dislike.clicked, .share.clicked {
+        filter: brightness(0) saturate(100%) hue-rotate(180deg); /* Blue tint filter */
+    }
+
+
+
+.user > img{
+    margin: 5px;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background-color: white;
+    border: 3px solid white;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.user > img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+} */
+
+.post-box{
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    flex: 1;
+    margin: 5px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-content{
+    height: 200px;
+    width: 95%;
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid var(--yellow);
+}
+
+
+.stories{
+    height: 100%;
+    flex: 1;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: var(--yellow-translucent);
+    padding: 30px;
+    margin-right: -10px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+.stories::-webkit-scrollbar {
+    width: 10px;
+}
+.stories::-webkit-scrollbar-thumb {
+    background: none;
+}
+
+.story{
+    position: relative;
+}
+
+.story:last-of-type{
+    padding-bottom: 25px;
+}
+
+.user-story{
+    position: absolute;
+    top: -15px; /* Adjust position from top*/
+    left: -15px; /* Adjust position from left */
+    width: 55px; 
+    height: 55px;
+    background-color: white; 
+    border-radius: 50%;
+  
+}
+
+
+.music-story{
+    height: 100px;
+    width: 100%;
+}
+
+.shadow {
+    box-shadow: 0px 10px 10px 0px rgb(59, 59, 59);
+}
