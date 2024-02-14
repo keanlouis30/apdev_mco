@@ -142,6 +142,10 @@ body{
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+    border-radius: 12px;
+    width: 100%;
+    height: 152px;
+    border: 0;
 }
 
 
@@ -155,7 +159,7 @@ body{
     transition-duration: 0.5s;
 }
 
-#dp:hover{
+#dp:hover {
     background-image: none;
     background-color: #eef5ee;
     cursor: pointer;
@@ -204,4 +208,13 @@ td{
     background-color: #0c3a2d;
     box-shadow: 0 5px #666;
     transform: translateY(2px);
+}
+
+#editimage{
+    background-color: transparent;
+    border: 0;
+}
+
+input{
+    display: none;
 }
