@@ -93,21 +93,32 @@ body{
 .contents{
     display: flex;
     flex-direction: row;
-    height: 85%;
+    height: 100%;
     padding: 20px 20px 0 20px;
     gap: 2%;
 }
 
-.main, .stories{
+.main-bg, .stories-bg{
     border: none;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    height: 100%;
     
 }
 
-.main{
-    width: 70%;
+.main-bg{
     background-color: var(--green-translucent);
+    width: 70%;
+}
+
+.stories-bg{
+    flex: 1;
+    background-color: var(--yellow-translucent);
+}
+
+.main{
+    height: 85%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -320,10 +331,8 @@ h2{
 
 .stories{
     height: 100%;
-    flex: 1;
     justify-content: space-between;
     gap: 50px;
-    background-color: var(--yellow-translucent);
     padding: 30px;
     margin-right: -10px;
     overflow:scroll;
@@ -356,7 +365,6 @@ h2{
     border-radius: 50%;
   
 }
-
 
 .music-story{
     height: 100px;
