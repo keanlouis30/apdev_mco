@@ -21,7 +21,7 @@ const validateLogin = (usernameInput, passwordInput) => {
 
 const loginForm = document.getElementsByClassName("login-form")[0];
 
-loginForm.addEventListener("submit", function (event) {
+loginForm.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
 
     // Get values from input fields
