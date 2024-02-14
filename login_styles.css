@@ -6,6 +6,8 @@
 
 html {
     background-image: url("bg3.png");
+    background-repeat: no-repeat;
+    background-color: #8fae85;
     min-width: 1250px;
 }
 
@@ -154,7 +156,8 @@ a:hover{
     border: 3px solid var(--yellow);
     height: 65%;
     width: 75%;
-    margin: 50px 80px;
+    margin: 50px;
+    margin-bottom: 25px;
     border-radius: 25px;
 }
 
@@ -212,3 +215,4 @@ a:hover{
         order: 2;
     }
 }
+
