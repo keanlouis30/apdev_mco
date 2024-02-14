@@ -1,6 +1,6 @@
 html{
     background-image: url("bg2.png");
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -127,7 +127,6 @@ body{
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    transition-duration: 1s;
     border: 1px solid black;
 }
 
