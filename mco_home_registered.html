@@ -62,8 +62,8 @@
                     </div>
 
                     <div class="buttons"> 
-                        <button class="aside-button">Profile</button>
-                        <button class="aside-button">Settings</button>
+                        <button class="aside-button" id="profile-button">Profile</button>
+                        <button class="aside-button" id="settings-button">Settings</button>
     
                     </div>
 
@@ -269,22 +269,8 @@
         </div>
 
         <!-- scripts -->
-        <script>
-            
-            function react(element, containerId) {
-                // Toggle the 'clicked' class to change the color
-                var container = document.getElementById(containerId);
-                var elements = container.querySelectorAll('.rating img');
-                elements.forEach(function(el) {
-                    if (el !== element && el.classList.contains('clicked')) {
-                        el.classList.remove('clicked');
-                    }
-                });
-                
-                element.classList.toggle('clicked');
-            }
-
-        </script>
+        <script src="userprofilejs.js"></script>
+        <script src="settjs.js"></script>
         
     </body>
 </html>

@@ -11,6 +11,7 @@ const validateLogin = (usernameInput, passwordInput) => {
         // Check if the password matches the stored password for the username
         if (validUsers[usernameInput] === passwordInput) {
             alert("Login successful!");
+            window.location.href = "mco_home_registered.html";
         } else {
             alert("Incorrect password. Please try again.");
         }
@@ -21,7 +22,7 @@ const validateLogin = (usernameInput, passwordInput) => {
 
 const loginForm = document.getElementsByClassName("login-form")[0];
 
-loginForm.addEventListener("submit", function (event) {
+loginForm.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
 
     // Get values from input fields
