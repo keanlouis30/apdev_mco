@@ -100,6 +100,7 @@ body{
 
 .main, .stories{
     border: none;
+    border-radius: 25px 25px 25px 25px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     
@@ -313,13 +314,14 @@ h2{
 
 
 .stories{
-    height: 100%;
+    width: 100%;
     flex: 1;
     justify-content: space-between;
     gap: 50px;
     background-color: var(--yellow-translucent);
     padding: 30px;
     margin-right: -10px;
+    border-radius: 25px 25px 25px 25px;
     overflow:scroll;
     overflow-x:hidden;
 }
