@@ -176,6 +176,9 @@ h1{
 #footer{
     background-color: white;
     border-top: 5px solid #bc7d2b;
+    color: #0c3a2d;
+    font-size: medium;
+    font-weight: bold;
 }
 
 h1:hover{
