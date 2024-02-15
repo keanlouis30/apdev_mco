@@ -31,10 +31,12 @@ body{
 
 #firstcol{
     width: 40%;
-    height: 100%;
+    height: 100;
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    align-self: flex-start;
+    
 }
 
 #secondcol{
@@ -82,8 +84,9 @@ body{
     padding-right: 0;
     position: sticky;
     align-self: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
     top: 8%;
-    z-index: 0;
     
 }
 
@@ -133,6 +136,10 @@ body{
 
 #profilepic{
     transition-duration: 0.5s;
+}
+
+#profilepic > input{
+    display: none;
 }
 
 #dp:hover {
@@ -194,4 +201,5 @@ td{
 input{
     display: none;
 }
+
 
