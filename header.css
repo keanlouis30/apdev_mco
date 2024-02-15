@@ -3,7 +3,13 @@
         <div id="logodiv">
             <a href="homelog.html"><img id="logo" src="logo4.png"></a>
         </div>
-    </div> 
+        <div id="searchbar">
+
+        </div>
+        <div id="headerbuttons">
+
+        </div>
+    </div>
 */
 
 #logo{
@@ -32,4 +38,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 15px;
+}
+
+#searchbar{
+    width: 60%;
+    height: 100%;
+}
+
+#headerbuttons{
+    width: 30%;
+    height: 100%;
 }

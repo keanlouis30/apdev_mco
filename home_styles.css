@@ -21,25 +21,104 @@ body{
     overflow-y: hidden;
 }
 
+.header{
+    width: 100%-60px;
+    height: 55px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    top: 100px;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 30%
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: var(--green);
+    border-radius: 100%;
+}
+
+.searcharea{
+    display: flex;
+    flex-direction: row;
+    border: var(--green) 0.5px solid;
+    border-radius: 15px;
+    width: 85%;
+    height: 35px;
+}
+
+.searchbox{
+    width: 90%;
+    border: none;
+    padding-left: 5px;
+    background: none;
+    outline: none;
+    height: 35px;
+    font-size: 15px;
+    font-family: 'Comfortaa';
+}
+
+.search{
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    border: none;
+    background: url(https://openclipart.org/image/2400px/svg_to_png/213239/Search-icon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; /*horizontal vertical*/
+}
+
+
+.logout{
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.logout:hover{
+    background-color: var(--green);
+    color: var(--yellow);
+    font-weight: bolder;
+}
+
 .contents{
     display: flex;
     flex-direction: row;
-    height: 85%;
+    height: 100%;
     padding: 20px 20px 0 20px;
     gap: 2%;
 }
 
-.main, .stories{
+.main-bg, .stories-bg{
     border: none;
-    border-radius: 25px 25px 25px 25px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    height: 100%;
     
 }
 
-.main{
-    width: 75%;
+.main-bg{
     background-color: var(--green-translucent);
+    width: 70%;
+}
+
+.stories-bg{
+    flex: 1;
+    background-color: var(--yellow-translucent);
+}
+
+.main{
+    height: 85%;
+    width: 95%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -192,15 +271,17 @@ h2{
 
 
 .like, .dislike, .share {
-    filter: grayscale(100%);
     height: 30px;
     width: 30px;
 }
 
-/* Color when clicked */
+.like, .dislike {
+    filter: grayscale(100%);
+}
 
-    .like.clicked, .dislike.clicked, .share.clicked {
-        filter: brightness(0) saturate(100%) hue-rotate(180deg); /* Blue tint filter */
+
+.like.clicked, .dislike.clicked, .share.clicked {
+        filter: brightness(0) saturate(100%) hue-rotate(20deg); 
     }
 
 
@@ -236,23 +317,24 @@ h2{
 }
 
 .post-content{
-    height: 200px;
-    width: 95%;
+    height: 200px-40px;
+    width: 95%-40px;
     margin: 10px;
     border-radius: 25px;
     border: 2px solid var(--yellow);
+    padding: 20px;
 }
 
+.post-text{
+    font-size: 12px;
+}
 
 .stories{
-    width: 100%;
-    flex: 1;
+    height: 100%;
     justify-content: space-between;
     gap: 50px;
-    background-color: var(--yellow-translucent);
     padding: 30px;
     margin-right: -10px;
-    border-radius: 25px 25px 25px 25px;
     overflow:scroll;
     overflow-x:hidden;
 }
@@ -266,6 +348,7 @@ h2{
 
 .story{
     position: relative;
+    width: 100%;
 }
 
 .story:last-of-type{
@@ -278,11 +361,10 @@ h2{
     left: -15px; /* Adjust position from left */
     width: 55px; 
     height: 55px;
-    background-color: white; 
+    border: 2px solid white; 
     border-radius: 50%;
   
 }
-
 
 .music-story{
     height: 100px;
