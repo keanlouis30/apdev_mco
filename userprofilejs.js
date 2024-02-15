@@ -29,5 +29,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+function react(element, containerId) {
+    // Toggle the 'clicked' class to change the color
+    var container = document.getElementById(containerId);
+    var elements = container.querySelectorAll('.rating img');
+    elements.forEach(function(el) {
+        if (el !== element && el.classList.contains('clicked')) {
+            el.classList.remove('clicked');
+        }
+    });
+    
+    element.classList.toggle('clicked');
+}
+
+document.getElementById("profile-button").onclick = function() {
+    window.location.href = "userprofile_cua.html";
+}
+
 
 document.querySelector('#firstcol').style.height = getComputedStyle(document.getElementById('body')).height

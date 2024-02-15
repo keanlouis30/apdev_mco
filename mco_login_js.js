@@ -11,6 +11,7 @@ const validateLogin = (usernameInput, passwordInput) => {
         // Check if the password matches the stored password for the username
         if (validUsers[usernameInput] === passwordInput) {
             alert("Login successful!");
+            window.location.href = "mco_home_registered.html";
         } else {
             alert("Incorrect password. Please try again.");
         }
