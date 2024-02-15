@@ -41,10 +41,18 @@ function react(element, containerId) {
     
     element.classList.toggle('clicked');
 }
+<<<<<<< HEAD
 
 document.getElementById("profile-button").onclick = function() {
     window.location.href = "userprofile_cua.html";
 }
 
+=======
+>>>>>>> fd5d59b411ec7321b366a260536f22cd869ca450
 
-document.querySelector('#firstcol').style.height = getComputedStyle(document.getElementById('body')).height
+// document.getElementById('profile-button').onclick = function() {
+//     window.location.href = "userprofile_cua.html";
+// }
+
+
+document.querySelector('#firstcol').style.height = getComputedStyle(document.getElementById('body')).height;
