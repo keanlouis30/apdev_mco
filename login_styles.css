@@ -154,7 +154,7 @@ a:hover{
 }
 
 .circle{
-    height: 25px;
+    height: 15px;
     width: 25%;
     border: none;
     border-radius: 15px;
@@ -173,6 +173,7 @@ a:hover{
     width: 75%;
     justify-content: space-around;
     gap: 5px;
+    margin-top: -10px;
 }
 
 @media screen and (max-width: 1250px) {
