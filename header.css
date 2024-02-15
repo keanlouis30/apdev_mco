@@ -112,6 +112,8 @@
     /* padding: 10px; */
     border: 0;
     border-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     background-color: white;
     color: #0C3B2E;
     transition-duration: 0.2s;
