@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 2:48pm Feb 8 2024 -->
+<!-- 4:35pm - 6:40pm (until responsive) Feb 09 -->
+
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login_styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- <div id="box"> -->
+        <div class="picture container" id="slideshow">
+            <img class="shadow" src="loginpic1.jpg"/>
+            <img class="shadow" src="loginpic2.jpg"/>
+            <img class="shadow" src="loginpic3.jpg"/>
+            <section class="pic-nav">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </section>
+        </div>
+    <!-- </div> -->
+    
+    <div class="login container shadow">
+        <div class="login-contents">
+            <form class="login-form">
+                <h1>login</h1>
+                <div class="input-sec">
+                    <div class="detail">
+                        <img src="user.png" class="icon"/>
+                        <input type="text" class="info" name="username" placeholder="username...">
+                    </div>
+                    <div class="detail">
+                        <img class="icon" src="pass.png"/>
+                        <input type="password" class="info" name="password" placeholder="password...">
+                    </div>
+                </div>
+
+                <div class="recall-pass">
+                    <div> 
+                        <input type="checkbox" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a>Forgot password?</a>
+                </div>
+
+                <input type="submit" value="login" id="login">
+            </form>
+        </div>
+    </div>
+    <script src="mco_login_js.js"></script>
+</body>
+</html>

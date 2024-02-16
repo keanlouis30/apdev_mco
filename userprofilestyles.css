@@ -1,5 +1,8 @@
 html{
-    background-image: url("bg2.png");
+    background-color: #b9cdbb;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -9,35 +12,8 @@ body{
     align-items: center;
     align-content: center;
     height: 100%;
-    margin: 5px;
-}
-
-#logo{
-    height: 100%;
-    width: 100%;
-}
-
-#logodiv, #logo, #header{
-    margin: 0;
     padding: 0;
-}
-
-#header{
-    display: flex;
-    width: 98%;
-    height: 20%;
-    background-color: #eef5ee;
-    margin-bottom: 20px;
-    padding: 10px;
-    padding-left: 15px;
-    box-shadow: 0px 10px 10px 0px rgb(59, 59, 59);
-    border-radius: 25px;
-    position: sticky;
-}
-
-#logodiv{
-    width: 10%;
-    height: 100%;
+    margin: 0;
 }
 
 .rectholder{
@@ -55,8 +31,10 @@ body{
 
 #firstcol{
     width: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 
 #secondcol{
@@ -64,8 +42,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 50%
-    
+    width: 50%;
 }
 
 #details{
@@ -97,12 +74,17 @@ body{
 
 #profile{
     flex-direction: column;
-    height: 100%;
+    height: fit-content;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0;
     padding-right: 0;
+    position: sticky;
+    align-self: flex-start;
+    top: 8%;
+    z-index: 0;
+    
 }
 
 #body{
@@ -116,7 +98,12 @@ body{
 }
 
 #dp{
+    background-image: url("profilepic.png");
+    background-size: 100%;
     border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
 }
 
 #profiletext{
@@ -127,27 +114,31 @@ body{
 
 .albumimage{
     margin-top: 3px;
+    margin-bottom: 3px;
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+    border-radius: 12px;
+    width: 100%;
+    height: 152px;
+    border: 0;
 }
 
-.albumimage1{
-    margin-top: 3px;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    width: 64px;
-    height: 64px;
-}
+
 
 #badgerep{
     width: 100%;
 }
 
-#dp{
-    height: 200px;
-    width: 200px;
+
+#profilepic{
+    transition-duration: 0.5s;
+}
+
+#dp:hover {
+    background-image: none;
+    background-color: #eef5ee;
+    cursor: pointer;
 }
 
 p{
@@ -156,6 +147,13 @@ p{
 
 #deetstable{
     text-align: left;
+}
+
+td{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .editbuttons, .savebuttons{
@@ -186,4 +184,13 @@ p{
     background-color: #0c3a2d;
     box-shadow: 0 5px #666;
     transform: translateY(2px);
+}
+
+#editimage{
+    background-color: transparent;
+    border: 0;
+}
+
+input{
+    display: none;
 }

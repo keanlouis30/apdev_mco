@@ -1,9 +1,14 @@
 html{
     background-image: url("bg3.png");
+    padding: 0;
+    margin: 0;
 }
 
 body{
+    margin: 0;
+    padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -22,7 +27,6 @@ body{
 #leftpane{
     height: 100%;
     width: 25%;
-    border-right: 2px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 0;
@@ -41,7 +45,7 @@ body{
     align-items: center;
     align-content: center;
     font-family: 'Source Code Pro';
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #dp{
@@ -63,18 +67,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 5%;
+    padding-left: 0;
 }
 
 .settingsbuttons{
-    width: 95%;
+    width: 100%;
     text-align: left;
     padding-left: 30px;
     background-color: transparent;
-    border: 2px solid black;
-    border-right: 0px;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border: 0px;
     margin-top: 1px;
     margin-bottom: 1px;
     padding-top: 15px;
@@ -87,8 +88,9 @@ body{
 .settingsbuttons:hover{
     background-color: black;
     color: white;
+    transform: translateY(-2px);
 }
 
 .settingsbuttons:active{
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
+    transform: translateY(2px);
 }
