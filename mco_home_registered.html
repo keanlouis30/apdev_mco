@@ -30,33 +30,15 @@
         -->
         <div id="header">
             <div id="logodiv">
-                <a href="mco_home_registered.html"><img id="logo" src="logo4.png"></a>
+                <a href="homelog.html"><img id="logo" src="logo4.png"></a>
             </div>
-            <div class="searchbarcontainer">
-                <div class="searchbar">
-                    <input type="search" placeholder="Search..."\>
-                </div>
-                <div class="searchbuttoncontainer">
-                    <button class="searchbutton" type="submit">
-                        <svg class="mg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                        </svg>
-                    </button>
-                </div>
+            <div id="searchbar">
+    
             </div>
             <div id="headerbuttons">
-                <div id="dropdowndiv">
-                    <select name="settings" id="dropdownsettings">
-                        <option id="create" class="ddoptions" value="0">Create</option>
-                        <option class="ddoptions" value="newpost">New Post</option>
-                        <option class="ddoptions" value="newstory">New Story</option>
-                        <option class="ddoptions" value="profile">Profile</option>
-                        <option class="ddoptions" value="settings">Settings</option>
-                        <option class="ddoptions" value="logout">Log Out</option>
-                    </select>
-                </div>
+    
             </div>
-        </div>  
+        </div>
 
 
         <div class="contents">
@@ -82,13 +64,37 @@
                     </div>
 
                     <div class="buttons"> 
-                        <button id="profilebutton" class="aside-button">Profile</button>
-                        <button id="settingsbutton" class="aside-button">Settings</button>
+                        <button class="aside-button">Profile</button>
+                        <button class="aside-button">Settings</button>
     
                     </div>
+
+                 
                 </aside>
 
                 <div class="forum">
+
+                    <div id="post-0" class="post">
+                        <div class="user"><img src="https://i.pinimg.com/originals/d7/cb/48/d7cb48723d0054d7586cfa927437cf67.jpg"/></div>
+                        <div class="post-box shadow">
+                            <div class="create-post">
+                                <h3 class="new-title">Title: <input type="text"></h3>
+                                <p class="post-text"><textarea class="new-post" placeholder="Write a post..." id="new-post"></textarea></p>
+                               
+
+                            </div>
+
+                            <div class="post-interactions">
+                                <button class="view-post-button publish" onclick="publish()">publish post</button>
+                                <div class="create">
+                                    <img class="create-icons" src="https://cdn-icons-png.flaticon.com/512/876/876210.png">
+                                    <img class="create-icons" src="https://pixsector.com/cache/517d8be6/av5c8336583e291842624.png">
+                                    <img class="create-icons" src="https://static.thenounproject.com/png/74417-200.png">
+                                </div>
+                            </div>
+                                
+                        </div>
+                    </div>
 
                     <div id="post-1" class="post">
                         <div class="user"><img src="https://tse2.mm.bing.net/th?id=OIP.52L1HoqsjyL47LYaC2CBGwHaKF&pid=Api&P=0&h=180"/></div>
@@ -309,8 +315,8 @@
             window.location.href = openPost;
 
             }
+
         </script>
-        <script type="text/javascript" src="header.js"></script>
-        <script type="text/javascript" src="mco_home_registeredjs.js"></script>
+        
     </body>
 </html>
