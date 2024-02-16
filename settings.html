@@ -5,6 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=Chivo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 </head>
 <body>
     <div id="header">
@@ -31,10 +32,13 @@
         <div id="leftpane">
             <div id="profile">
                 <div id="dp">
-                    <img id="dpimg" src="profilepic.png">
+                    <label for="input-file" id="imagechange">
+                        <img id="dpimg">
+                    </label>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
                 </div>
                 <div id="profilename">
-                    <p>Profile Name</p>
+                    <p>Kean Rosales</p>
                 </div>
             </div>
             <div id="settings">
@@ -49,9 +53,44 @@
                 </div>
             </div>
         </div>
-        <div id="rightpane">
-
+        <div class="rightpane" id="profilerightpane1">
+            <table id="profiletable">
+                <tr>
+                    <td><p class="profilesettinglabel">Profile Name</p></td>
+                    <td><input class="profileinputs" type="text" placeholder="Kean Rosales"></td>
+                </tr>
+                <tr>
+                    <td><p class="profilesettinglabel">Email</p></td>
+                    <td><input class="profileinputs" type="text" placeholder="keanlouis30@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><p class="profilesettinglabel">Display Name</p></td>
+                    <td><input class="profileinputs" type="text" placeholder="LeBron James"></td>
+                </tr>
+                <tr>
+                    <td><p class="profilesettinglabel">Bio</p></td>
+                    <td><input class="profileinputs" type="text" placeholder="My glorious king LeBron James"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="rightpane" id="profilerightpane2">
+            <table id="profiletable">
+                <tr>
+                    <td><p class="pwsettinglabel">Password</p></td>
+                    <td><input class="profileinputs" type="password"></td>
+                </tr>
+                <tr>
+                    <td><p class="pwsettinglabel">Confirm Password</p></td>
+                    <td><input class="profileinputs" type="password"></td>
+                </tr>
+                <tr>
+                    <td><p class="pwsettinglabel">Old Password</p></td>
+                    <td><input class="profileinputs" type="password" ></td>
+                </tr>
+                
+            </table>
         </div>
     </div>
+    <script type="text/javascript" src="settjs.js"></script>
 </body>
 </html>
