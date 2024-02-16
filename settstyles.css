@@ -91,6 +91,7 @@ body{
     font-family: Chivo;
     transition-duration: 0.1s;
     font-size: 20px;
+    border-radius: 25px;
 }
 
 .settingsbuttons:hover{
