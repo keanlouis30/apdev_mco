@@ -5,21 +5,40 @@
     <link href='https://fonts.googleapis.com/css?family=Chivo' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
 </head>
 <body>
     <div id="header">
         <div id="logodiv">
-            <a href="homelog.html"><img id="logo" src="logo4.png"></a>
+            <a href="mco_home_registered.html"><img id="logo" src="logo4.png"></a>
         </div>
-    </div> 
+        <div class="searchbarcontainer">
+            <div class="searchbar">
+                <input id="searchinput" type="search" placeholder="Search..."\>
+            </div>
+            <div class="searchbuttoncontainer">
+                <button class="searchbutton" type="submit">
+                    <svg class="mg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="headerbuttons">
+
+        </div>
+    </div>  
     <div id="body">
         <div id="leftpane">
             <div id="profile">
                 <div id="dp">
-                    <img id="dpimg" src="profilepic.png">
+                    <label for="input-file" id="imagechange">
+                        <img id="dpimg">
+                    </label>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
                 </div>
                 <div id="profilename">
-                    <p>Profile Name</p>
+                    <p>Kean Rosales</p>
                 </div>
             </div>
             <div id="settings">
@@ -30,13 +49,48 @@
                     <button type="submit" class="settingsbuttons" id="sb2">Password</button>
                 </div>
                 <div>
-                    <button type="submit" class="settingsbuttons" id="sb3">Back</button>
+                    <button type="submit" class="settingsbuttons" id="sb3">Save</button>
                 </div>
             </div>
         </div>
-        <div id="rightpane">
-
+        <div class="rightpane" id="profilerightpane1">
+            <table id="profiletable">
+                <tr>
+                    <td><p class="profilesettinglabel">Profile Name</p></td>
+                    <td><input class="profileinputs" type="text" placeholder="Kean Rosales"></td>
+                </tr>
+                <tr>
+                    <td><p class="profilesettinglabel">Email</p></td>
+                    <td><input class="profileinputs" type="text" placeholder="keanlouis30@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td><p class="profilesettinglabel">Display Name</p></td>
+                    <td><input class="profileinputs" type="text" placeholder="LeBron James"></td>
+                </tr>
+                <tr>
+                    <td><p class="profilesettinglabel">Bio</p></td>
+                    <td><input class="profileinputs" type="text" placeholder="My glorious king LeBron James"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="rightpane" id="profilerightpane2">
+            <table id="profiletable">
+                <tr>
+                    <td><p class="pwsettinglabel">Password</p></td>
+                    <td><input class="profileinputs" type="password"></td>
+                </tr>
+                <tr>
+                    <td><p class="pwsettinglabel">Confirm Password</p></td>
+                    <td><input class="profileinputs" type="password"></td>
+                </tr>
+                <tr>
+                    <td><p class="pwsettinglabel">Old Password</p></td>
+                    <td><input class="profileinputs" type="password" ></td>
+                </tr>
+                
+            </table>
         </div>
     </div>
+    <script type="text/javascript" src="settjs.js"></script>
 </body>
 </html>

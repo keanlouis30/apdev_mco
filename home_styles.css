@@ -117,7 +117,7 @@ body{
 }
 
 .main{
-    height: 85%;
+    height: 100%;
     width: 95%;
     display: flex;
     flex-direction: row;
@@ -140,7 +140,7 @@ h2{
     justify-content: space-around;
     padding: 25px 0 ;
     width: 25%;
-    margin: 25px 0;
+    margin: 25px 0 125px 0;
 }
 
 .topic-list{
@@ -194,7 +194,7 @@ h2{
     cursor: pointer;
 }
 
-.aside-button:hover{
+.aside-button:hover, .view-post-button:hover{
     background-color:  var(--green);
     color: var(--yellow);
 }
@@ -231,7 +231,7 @@ h2{
 }
 
 .post:last-of-type{
-    padding-bottom: 25px;
+    padding-bottom: 125px;
 }
 
 .post{
@@ -255,7 +255,7 @@ h2{
     justify-content: space-between;
 }
 
-.comment-button{
+.view-post-button{
     width: 45%;
     height: 30px;
     background-color: var(--brown);
@@ -352,7 +352,7 @@ h2{
 }
 
 .story:last-of-type{
-    padding-bottom: 25px;
+    padding-bottom: 125px;
 }
 
 .user-story{

@@ -1,14 +1,29 @@
 <!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="userprofilestyles.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gidole-regular" type="text/css"/>
 </head>
 <body>
-    
     <div id="header">
         <div id="logodiv">
-            <a href="homelog.html"><img id="logo" src="logo2.png"></a>
+            <a href="mco_home_registered.html"><img id="logo" src="logo4.png"></a>
+        </div>
+        <div class="searchbarcontainer">
+            <div class="searchbar">
+                <input type="search" placeholder="Search..."\>
+            </div>
+            <div class="searchbuttoncontainer">
+                <button class="searchbutton" type="submit">
+                    <svg class="mg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="headerbuttons">
+
         </div>
     </div>
     <div id="body">
@@ -23,10 +38,6 @@
                 <div id="profiletext">
                     <p id="username">Geo Hilomen</p>
                     <p id="bio">BS CS-CSE 122</p>
-                </div>
-                <div id="buttons1">
-                    <button type="submit" class="editbuttons" id="editbutton1">Edit</button>
-                    <button type="submit" class="savebuttons" id="savebutton1">Save</button>
                 </div>
             </div>
             <div class="rectholder" id="badgerep">
@@ -59,10 +70,6 @@
                         </tr>
                     </table>
                 </div>
-                <div id="buttons2">
-                    <button type="submit" class="editbuttons" id="editbutton2">Edit</button>
-                    <button type="submit" class="savebuttons" id="savebutton2">Save</button>
-                </div>
             </div>
             <div id="divide">
                 <div class="rectholder" id="topsongs">
@@ -85,5 +92,6 @@
         </div>
     </div>
     <script type="text/javascript" src="userprofilejs.js"></script>
+    <script type="text/javascript" src="header.js"></script>
 </body>
 </html>

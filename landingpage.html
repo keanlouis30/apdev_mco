@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="landingpage.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Covered By Your Grace' rel='stylesheet'>
+    <link href="https://db.onlinewebfonts.com/c/784b803cfc3073fe60495bffc40cd2e1?family=Wildemount" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div id="firstrow">
+            <div id="homelink">
+                <button class="headerbuttons" id="hb3">H O M E</button>
+            </div>
+            <div id="logodiv">
+                <img id="logopng" src="logo4.png">
+            </div>
+            <div id="lrbuttons">
+                <button class="headerbuttons" id="hb1">LOG IN</button>
+                <button class="headerbuttons" id="hb2">SIGN UP</button>
+            </div>
+        </div>
+        <div id="secondrow">
+            <p id="caption">a music forum website</p>
+        </div>
+    </div>
+    <div id="body">
+        <h1>Notebook.<br> Uniting Communities,<br> One Note at a time</h1>
+    </div>
+    <div id="graphics">
+        <img id="g1" src="graphics1.png">
+        <img id="g1" src="graphics2.png">
+        <img id="g1" src="graphics3.png">
+        <img id="g1" src="graphics4.png">
+    </div>
+    <div id="footer">
+        <p>Copyright &copy; 2024 Notebook. All Rights Reserved.</p>
+        <p>Created as partial requirement for CCAPDEV.</p>
+        <p>Alvin Cua | Geo Hilomen | Renee Khan | Kean Rosales</p>
+    </div>
+    <script src="mco_login_js.js"></script>
+    <script>
+        document.getElementById("hb3").onclick = () => {
+            window.location.href = "mco_home_registered.html";
+        }
+        document.getElementById("hb1").onclick = () => {
+            window.location.href = "mco_login.html";
+        }
+        document.getElementById("hb2").onclick = () => {
+            window.location.href = "mco_register.html";
+        }
+    </script>
+</body>
+</html>
