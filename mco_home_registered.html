@@ -30,24 +30,17 @@
         -->
         <div id="header">
             <div id="logodiv">
-                <a href="mco_home_registered.html"><img id="logo" src="logo4.png"></a>
+                <a href="homelog.html"><img id="logo" src="logo4.png"></a>
             </div>
-            <div class="searchbarcontainer">
-                <div class="searchbar">
-                    <input type="search" placeholder="Search..."\>
-                </div>
-                <div class="searchbuttoncontainer">
-                    <button class="searchbutton" type="submit">
-                        <svg class="mg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                        </svg>
-                    </button>
-                </div>
+            <div id="searchbar">
+    
             </div>
             <div id="headerbuttons">
     
             </div>
         </div>
+
+
         <div class="contents">
             <div class="main-bg">
             <div class="main">
@@ -71,8 +64,8 @@
                     </div>
 
                     <div class="buttons"> 
-                        <button class="aside-button" id="profile-button">Profile</button>
-                        <button class="aside-button" id="settings-button">Settings</button>
+                        <button class="aside-button">Profile</button>
+                        <button class="aside-button">Settings</button>
     
                     </div>
 
@@ -91,7 +84,7 @@
                             </div>
 
                             <div class="post-interactions">
-                                <button class="comment-button">comment</button>
+                                <button class="view-post-button" onclick="viewPost('post-1')">view post</button>
                                 <div class="rating">
                                     <img src="like.png" class="like" onclick="react(this, 'post-1')"/>
                                     <img src="dislike.png" class="dislike" onclick="react(this, 'post-1')"/>
@@ -112,7 +105,7 @@
                             </div>
 
                             <div class="post-interactions">
-                                <button class="comment-button">comment</button>
+                                <button class="view-post-button" onclick="viewPost('post-2')">view post</button>
                                 <div class="rating">
                                     <img src="like.png" class="like" onclick="react(this, 'post-2')"/>
                                     <img src="dislike.png" class="dislike" onclick="react(this, 'post-2')"/>
@@ -133,7 +126,7 @@
                             </div>
 
                             <div class="post-interactions">
-                                <button class="comment-button">comment</button>
+                                <button class="view-post-button" onclick="viewPost('post-3')">view post</button>
                                 <div class="rating">
                                     <img src="like.png" class="like" onclick="react(this, 'post-3')"/>
                                     <img src="dislike.png" class="dislike" onclick="react(this, 'post-3')"/>
@@ -154,7 +147,7 @@
                             </div>
 
                             <div class="post-interactions">
-                                <button class="comment-button">comment</button>
+                                <button class="view-post-button" onclick="viewPost('post-4')">view post</button>
                                 <div class="rating">
                                     <img src="like.png" class="like" onclick="react(this, 'post-4')"/>
                                     <img src="dislike.png" class="dislike" onclick="react(this, 'post-4')"/>
@@ -175,7 +168,7 @@
                             </div>
 
                             <div class="post-interactions">
-                                <button class="comment-button">comment</button>
+                                <button class="view-post-button" onclick="viewPost('post-5')">view post</button>
                                 <div class="rating">
                                     <img src="like.png" class="like" onclick="react(this, 'post-5')"/>
                                     <img src="dislike.png" class="dislike" onclick="react(this, 'post-5')"/>
@@ -196,7 +189,7 @@
                             </div>
 
                             <div class="post-interactions">
-                                <button class="comment-button">comment</button>
+                                <button class="view-post-button" onclick="viewPost('post-6')">view post</button>
                                 <div class="rating">
                                     <img src="like.png" class="like" onclick="react(this, 'post-6')"/>
                                     <img src="dislike.png" class="dislike" onclick="react(this, 'post-6')"/>
@@ -217,7 +210,7 @@
                             </div>
 
                             <div class="post-interactions">
-                                <button class="comment-button">comment</button>
+                                <button class="view-post-button" onclick="viewPost('post-7')">view post</button>
                                 <div class="rating">
                                     <img src="like.png" class="like" onclick="react(this, 'post-7')"/>
                                     <img src="dislike.png" class="dislike" onclick="react(this, 'post-7')"/>
@@ -275,11 +268,33 @@
             </div>
         </div>
 
+        </div>
 
         <!-- scripts -->
-        <script src="userprofilejs.js"></script>
-        <script src="settjs.js"></script>
-        <script src="header.js"></script>
+        <script>
+            
+            function react(element, containerId) {
+                // Toggle the 'clicked' class to change the color
+                var container = document.getElementById(containerId);
+                var elements = container.querySelectorAll('.rating img');
+                elements.forEach(function(el) {
+                    if (el !== element && el.classList.contains('clicked')) {
+                        el.classList.remove('clicked');
+                    }
+                });
+                
+                element.classList.toggle('clicked');
+            }
+
+            function viewPost(postID){
+            var openPost = encodeURIComponent(postID) + ".html";
+
+            
+            window.location.href = openPost;
+
+            }
+
+        </script>
         
     </body>
 </html>
