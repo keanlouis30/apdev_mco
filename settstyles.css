@@ -94,3 +94,13 @@ body{
 .settingsbuttons:active{
     transform: translateY(2px);
 }
+
+#header{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchinput{
+    padding: 3px 0px 3px 10px;
+}
