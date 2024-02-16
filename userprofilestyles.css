@@ -1,5 +1,6 @@
 html{
-    background-color: #b9cdbb;
+    background-image: url("bg2.png");
+    background-size: cover;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
