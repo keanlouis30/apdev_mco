@@ -11,18 +11,18 @@
 </head>
 
 <body>
-    <!-- <div id="box"> -->
-        <div class="picture container" id="slideshow">
-            <img class="shadow" src="loginpic1.jpg"/>
-            <img class="shadow" src="loginpic2.jpg"/>
-            <img class="shadow" src="loginpic3.jpg"/>
-            <section class="pic-nav">
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </section>
-        </div>
-    <!-- </div> -->
+    <div class="picture container">
+        <img id="img1" class="image" src="loginpic1.jpg"/>
+        <img id="img2" class="image" src="loginpic2.jpg"/>
+        <img id="img3" class="image" src="loginpic3.jpg"/>
+        <img id="img4" class="image" src="loginpic4.jpg"/>
+        <section class="pic-nav">
+            <div  class="circle" onclick="clickCircle(1)"></div>
+            <div  class="circle" onclick="clickCircle(2)"></div>
+            <div  class="circle" onclick="clickCircle(3)"></div>
+            <div  class="circle" onclick="clickCircle(4)"></div>
+        </section>
+    </div>
     
     <div class="login container shadow">
         <div class="login-contents">
@@ -52,5 +52,27 @@
         </div>
     </div>
     <script src="mco_login_js.js"></script>
+    <script>
+        var slideIndex = 0;
+        carousel()
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("image");
+            var circles = document.getElementsByClassName("circle");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            circles[slideIndex-1].classList.add("active");
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+            for(i = 0; i < x.length; i++){
+                if(i!=(slideIndex-1)){
+                    circles[i].classList.remove("active");
+                }
+            }
+        }
+    </script>
 </body>
 </html>

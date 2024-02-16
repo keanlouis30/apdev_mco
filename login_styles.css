@@ -6,8 +6,6 @@
 
 html {
     background-image: url("bg3.png");
-    background-repeat: no-repeat;
-    background-color: #8fae85;
     min-width: 1250px;
 }
 
@@ -120,7 +118,6 @@ input[type="submit"]{
     color: white;
     background-color: var(--brown);
     cursor: pointer;
-    transition-duration: 0.2s;
 }
 
 #login{   
@@ -130,11 +127,6 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color:  var(--green);
     color: var(--yellow);
-    transform: translateY(-2px);
-}
-
-input[type="submit"]:active{
-    transform: translateY(2px);
 }
 
 a{
@@ -147,6 +139,7 @@ a:hover{
 }
 
 .picture{
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,25 +149,32 @@ a:hover{
     border: 3px solid var(--yellow);
     height: 65%;
     width: 75%;
-    margin: 50px;
-    margin-bottom: 25px;
+    margin: 50px 80px;
     border-radius: 25px;
 }
 
 .circle{
-    height: 7px;
-    width: 150px;
+    height: 15px;
+    width: 25%;
     border: none;
-    background-color: rgba(238,226,176,0.8);
+    border-radius: 15px;
+    background-color: var(--brown);
+}
+
+.circle.active{
+    background-color: var(--yellow);
 }
 
 .pic-nav{
+    background-color: var(--brown);
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: center;
+    width: 75%;
+    justify-content: space-around;
+    gap: 5px;
+    margin-top: -10px;
 }
-
 
 @media screen and (max-width: 1250px) {
     
@@ -215,4 +215,3 @@ a:hover{
         order: 2;
     }
 }
-
