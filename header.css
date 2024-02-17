@@ -84,8 +84,8 @@
     /* margin-top: 3px; */
     height: 100%;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 140px;
+    justify-content: center;
+
     align-content: center;
     align-items: center;
     /* border: 1px solid; */

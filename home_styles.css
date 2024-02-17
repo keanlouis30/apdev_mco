@@ -31,10 +31,10 @@ body{
 
 #dropdownsettings{
     font-family: 'Comfortaa';
-    font-size: 14px;
-    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+    padding: 15px 30px 15px 30px;
     border-radius: 25px;
-
+    
 }
 
 #dropdownsettings:hover{
@@ -49,10 +49,15 @@ body{
 
 .ddoption{
     padding: 2px 5px 2px 5px;
+    
 }
 
-#create{
+#option1{
     display: none;
+}
+
+option{
+    padding: 10px 5px 10px 5px;
 }
 
 .contents{
