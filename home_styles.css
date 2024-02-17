@@ -34,7 +34,7 @@ body{
     font-size: 15px;
     padding: 15px 30px 15px 30px;
     border-radius: 25px;
-    
+    cursor: pointer;
 }
 
 #dropdownsettings:hover{
@@ -57,7 +57,7 @@ body{
 }
 
 option{
-    padding: 10px 5px 10px 5px;
+
 }
 
 .contents{
