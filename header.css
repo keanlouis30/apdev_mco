@@ -53,9 +53,12 @@
     z-index: 100;
     margin-bottom: 15px;
     border-bottom: 3px solid white;
+    align-items: center;
 }
 
 #logodiv{
+    display: flex;
+    align-items: center;
     width: 20%;
     height: 100%;
     margin-top: 15px;
@@ -180,3 +183,59 @@
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 50% 50%; /*horizontal vertical*/
+
+#headerbuttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+    #dropdownbutton{
+        border: 1px solid white;
+        border-radius: 25px;
+    }
+    
+    .options:hover, .options:focus{
+        background-color: #0C3A2D;
+        color: white;
+    }
+    
+    #dropdown{
+        position: relative;
+    }
+    
+    .dropdowncontent{
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .show{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .options{
+        text-align: center;
+        padding: 15px 30px 15px 30px;
+        font-size: 20px;
+        font-family: 'Comfortaa';
+        cursor: pointer;
+        border: 1px solid white;
+        border-radius: 25px;
+        margin: 5px 20px 5px 20px;
+        background-color: white;
+    }
+    
+    #optionsdiv{
+        background-color: #0C3A2D;
+        margin-left: -25px;
+        padding: 2px 5px 2px 5px;
+        border: 1px solid white;
+        border-radius: 25px;
+    }
+
+    .options:active{
+        transform: translateY(2px);
+    }
