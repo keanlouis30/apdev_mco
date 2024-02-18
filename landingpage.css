@@ -1,6 +1,11 @@
+:root{
+    --black: #282828;
+}
+
 html{
     margin: 0;
     padding: 0;
+    /*background-color: var(--black);*/
     background-image: url("landingbg.png");
     background-repeat:repeat;
 }
@@ -32,6 +37,7 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
+    /*background-color: var(--black);*/
     background-color: white;
     justify-content: center;
 }
@@ -174,6 +180,7 @@ h1{
 }
 
 #footer{
+    /*background-color: var(--black);*/
     background-color: white;
     border-top: 5px solid #bc7d2b;
     color: #0c3a2d;
