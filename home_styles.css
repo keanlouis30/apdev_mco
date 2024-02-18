@@ -29,36 +29,50 @@ body{
     align-content: center;
 }
 
-#dropdowndiv{
-    position: absolute;
-}
-#dropdownsettings{
-    font-family: 'Comfortaa';
-    font-size: 15px;
-    padding: 15px 30px 15px 30px;
+#dropdownbutton{
+    border: 1px solid white;
     border-radius: 25px;
-    cursor: pointer;
 }
 
-#dropdownsettings:hover{
+.options:hover, .options:focus{
     background-color: #0C3A2D;
     color: white;
 }
 
-#dropdownsettings::after{
-    background-color: #0C3A2D;
-    color: white;
+#dropdown{
+    position: relative;
 }
 
-.ddoption{
-    padding: 2px 5px 2px 5px;
-    
-}
-
-#option1{
+.dropdowncontent{
     display: none;
+    position: absolute;
+    z-index: 1;
 }
 
+.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.options{
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 5px 20px 5px 20px;
+    background-color: white;
+}
+
+#optionsdiv{
+    background-color: #0C3A2D;
+    margin-left: -25px;
+    padding: 2px 5px 2px 5px;
+    border: 1px solid black;
+    border-radius: 25px;
+}
 
 .contents{
     display: flex;
