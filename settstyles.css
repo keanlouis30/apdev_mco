@@ -1,8 +1,11 @@
+:root{
+    --black: #282828;
+}
+
 html{
     background-image: url("bg3.png");
     padding: 0;
     margin: 0;
-    
 }
 
 body{
@@ -125,14 +128,18 @@ body{
 }
 
 #profilerightpane1{
-    z-index: 2;
+    z-index: 3;
     background-color: white;
     display: flex;
-    
-    
 }
 
 #profilerightpane2{
+    z-index: 2;
+    margin-left: -75%;
+    background-color: white;
+}
+
+#profilerightpane3{
     z-index: 1;
     margin-left: -75%;
     background-color: white;
