@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- 5pm - 6:30 Feb 11 -->
+
+<html>
+    <head>
+        <title>Post</title>
+        <link rel="stylesheet" href="../style/post_style.css">
+        <link rel="stylesheet" href="../style/header.css">
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    </head>
+
+    <body>
+        <!--
+        <header class="header shadow">
+            <div class="header-left">
+                <img class="logo" />
+                <div class="searcharea">
+                <input type="search" class="searchbox" placeholder="search...">
+                <button class="search"></button>
+            </div>
+
+            <div class="header-middle">
+                
+            </div>
+
+            </div>
+            
+            <p class="logout">logout</p>
+        </header>
+        -->
+        <div id="header">
+            <div id="logodiv">
+                <a href="mco_home_registered.html"><img id="logo" src="../../assets/logo4.png"></a>
+            </div>
+            <div class="searchbarcontainer">
+                <div class="searchbar">
+                    <input type="search" placeholder="Search..."\>
+                </div>
+                <div class="searchbuttoncontainer">
+                    <button class="searchbutton" type="submit">
+                        <svg class="mg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="headerbuttons">
+    
+            </div>
+        </div>  
+
+
+        <div class="contents">
+            <div class="user">
+                <img class="userpfp" src="https://i.pinimg.com/originals/aa/59/f9/aa59f958a574abda4b52dc204ff114a3.jpg"/>
+                <div class="username">@isa1yumz</div>
+            </div>
+
+            <div class="post-content">
+                <h3 class="title">The Magic of Taylor Swift and Beyond
+                    </h3>
+                <p class="post-text">Let's delve into the captivating world of music, where the enchanting melodies of Taylor Swift and other contemporary pop artists reign supreme, weaving stories of love, heartbreak, and self-discovery. Beyond Swift's catchy tunes lies a diverse landscape of pop music, where artists like Adele and Beyoncé offer their own unique narratives, resonating with audiences worldwide.</p>
+            </div>
+
+            <article>
+
+                <div class="new-comment-area">
+                    <div class="new-comment">
+                        <img class="userpfp" src="https://64.media.tumblr.com/821f1a7cf8af5ea6ce73271d5965a794/0c806963e6b54cef-4a/s640x960/5d2467aa3b480548fff5c4c58b44903710b548f6.jpg">
+                        <textarea placeholder="Add a comment..."></textarea>
+                    </div>
+    
+                    
+                    <div class="publish-comment" >publish comment</div>    
+
+                </div>
+
+
+                <ol class="comments">
+                    <li  id="comment-1">
+                        <div>
+                            <img class="userpfp" src="https://i.pinimg.com/originals/72/37/69/72376954787f8767d5810a90127fcf8c.jpg"/><p class="comment">Mozart's music is timeless. It's incredible to think that his compositions still resonate with people centuries after they were written. 🌟</p>
+                        </div>
+                        <div class="comment-interactions">
+                            <div class="comm-rate">
+                                <img id="like" src="../../assets/like.png" onclick="react(this, 'comment-1')"><span id="like-num"> 1K </span>
+                                <img id="dislike" src="../../assets/dislike.png" onclick="react(this, 'comment-1')">
+                             </div>    <span class="reply" onclick="openReplyBox()"> reply </span>
+
+                        </div>
+                        
+                       
+                    </li>
+                    <li id="comment-2">
+                        <div>
+                            <img class="userpfp" src="https://wallpapercave.com/dwp1x/wp7479859.jpg"/><p class="comment">Pop music gets a bad rap sometimes, but it's amazing how it brings people together from all walks of life. Music truly is a universal language.</p>
+                        </div>
+                        <div class="comment-interactions">
+                            <div class="comm-rate">
+                                <img id="like" src="../../assets/like.png" onclick="react(this, 'comment-2')">
+                                <span id="like-num"> 15 </span>
+                                <img id="dislike" src="../../assets/dislike.png" onclick="react(this, 'comment-2')">
+                             </div>    <span class="reply" onclick="openReplyBox()"> reply </span>
+                        </div>
+                        
+                       
+                    </li>
+                    <li id="comment-3">
+                        <div>
+                            <img class="userpfp" src="https://pm1.narvii.com/7485/d516308e3566230f3ce6861387ea392ce644b340r1-1080-1069v2_hq.jpg"/><p class="comment">Beyoncé is not just a singer, she's a force of nature. Her music empowers and uplifts so many people around the world.</p>
+                        </div>
+                        <div class="comment-interactions">
+                            <div class="comm-rate">
+                                <img id="like" src="../../assets/like.png" onclick="react(this, 'comment-3')"><span id="like-num"> 78 </span>
+                                <img id="dislike" src="../../assets/dislike.png" onclick="react(this, 'comment-3')">
+                             </div>    <span class="reply" onclick="openReplyBox()"> reply </span>
+
+                        </div>
+                        
+                      
+                </ol>
+            </article>
+
+
+        </div>
+
+        <!-- scripts -->
+        <script>
+            function react(element, containerId) {
+                // Toggle the 'clicked' class to change the color
+                var container = document.getElementById(containerId);
+                var elements = container.querySelectorAll('.comm-rate img');
+                elements.forEach(function(el) {
+                    if (el !== element && el.classList.contains('clicked')) {
+                        el.classList.remove('clicked');
+                    }
+                });
+                
+                element.classList.toggle('clicked');
+            }
+        </script>
+        <script type="text/javascript" src="../js/header.js"></script>
+    </body>
+</html>
