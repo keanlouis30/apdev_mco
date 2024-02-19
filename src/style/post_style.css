@@ -8,7 +8,7 @@
 
 
 html{
-    background: url("bg3.png");
+    background: url("../../assets/bg3.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
