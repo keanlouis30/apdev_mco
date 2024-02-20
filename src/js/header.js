@@ -40,4 +40,15 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = 'userprofile_rosales.html';
     });
 
+    const html = document.documentElement;
+    const headerbg = document.getElementById("header");
+    const dmodetoggle = document.getElementById("dmodetoggle");
+    const body = document.getElementById("body");
+
+    dmodetoggle.addEventListener("click", function(){
+        headerbg.classList.toggle("blackbg");
+        body.classList.toggle("graybg");
+    });
+
+
 });
