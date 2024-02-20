@@ -47,5 +47,3 @@ document.addEventListener("DOMContentLoaded", function () {
 // document.getElementById('profile-button').onclick = function() {
 //     window.location.href = "userprofile_cua.html";
 // }
-
-
