@@ -1,9 +1,21 @@
 :root{
     --green: #0C3A2D;
-    
+    --bgblack: #282828;
+    --offwhite: #FEFFFE;
+    --gray: #848586;
 }
 
+.greenbg{
+    background-color: var(--green);
+}
 
+.blackbg{
+    background-color: var(--bgblack);
+}
+
+.graybg{
+    background-color: var(--gray);
+}
 .width100{
     width: 100%;
 }
@@ -21,7 +33,6 @@
 }
 
 #header{
-    background-color: #0c3a2d;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -189,7 +200,7 @@
     }
     
     #optionsdiv{
-        background-color: #0C3A2D;
+
         margin-left: -25px;
         padding: 2px 5px 2px 5px;
         border: 1px solid white;

@@ -41,15 +41,5 @@ document.addEventListener("DOMContentLoaded", function() {
         dp.src = URL.createObjectURL(imagechangebutton.files[0]);
     };
 
-    const darkmode = document.getElementById("dmodetoggle");
-    const html = document.documentElement;
-    const header = document.getElementById("header");
-
-    darkmode.addEventListener("click", function(){
-        html.style.backgroundImage = 'none';
-        html.style.backgroundColor = 'var(--black)';
-        header.style.backgroundColor = 'var(--black)';
-    });
-
     
 });
