@@ -3,7 +3,7 @@
 }
 
 html{
-    background-image: url("bg3.png");
+    background-image: url("../../assets/bg3.png");
     padding: 0;
     margin: 0;
 }
@@ -64,7 +64,7 @@ body{
 
 #dpimg{
     border-radius: 50%;
-    background-image: url("profilepic.png");
+    background-image: url("../../assets/profilepic.png");
     background-size: 100%;
     border-radius: 50%;
     height: 200px;
