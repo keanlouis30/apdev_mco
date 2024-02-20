@@ -1,0 +1,40 @@
+:root {
+    --yellow: #FFB804;
+    --brown: #BB8A52;
+    --green: #0C3A2D;
+    --yellow-translucent: rgb(255, 184, 4, 0.6);
+    --green-translucent: rgb(12, 58, 45, 0.6);
+    --bgblack: #282828;
+    --offwhite: #FEFFFE;
+    --gray: #848586;
+}
+
+html{
+    background-image: url("../../assets/bg3.png");
+    min-width: 1250px;
+}
+
+.autocenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexrow{
+    display: flex;
+    flex-direction: row;
+}
+
+.greenbg{
+    background-color: var(--green);
+}
+
+.whitefont{
+    color: white;
+}

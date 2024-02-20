@@ -76,12 +76,9 @@ p{
 }
 
 #body{
-    display: flex;
-    flex-direction: column;
     padding-top: 120px;
     padding-left: 30px;
     margin: 0;
-    justify-content: center;
     height: 100%;
     margin-bottom: 150px;
 }
@@ -124,13 +121,13 @@ p{
 }
 
 #hb2{
-    background-color: #0c3a2d;
     border: 0;
-    color: white;
 }
+
 a{
     text-decoration: none;
 }
+
 a:hover{
     text-decoration: underline;
     text-underline-position: below;
@@ -183,7 +180,7 @@ h1{
     /*background-color: var(--black);*/
     background-color: white;
     border-top: 5px solid #bc7d2b;
-    color: #0c3a2d;
+    color: black;
     font-size: medium;
     font-weight: bold;
 }
