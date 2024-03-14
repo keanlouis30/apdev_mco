@@ -160,7 +160,7 @@ h2{
     cursor: pointer;
 }
 
-.aside-button:hover, .view-post-button:hover{
+.aside-button:hover, .view-post-button:hover, .community-dropdown:hover{
     background-color:  var(--green);
     color: var(--yellow);
 }
@@ -261,6 +261,7 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 20px;
+    gap:10px;
 }
 
 .rating{
@@ -271,7 +272,7 @@ h2{
     justify-content: space-between;
 }
 
-.view-post-button{
+.view-post-button, .community-dropdown{
     width: 45%;
     height: 30px;
     background-color: var(--brown);
