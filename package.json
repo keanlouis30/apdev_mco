@@ -1,7 +1,7 @@
 {
   "name": "apdev_mco",
   "version": "1.0.0",
-  "description": "",
+  "description": "To run the project:",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

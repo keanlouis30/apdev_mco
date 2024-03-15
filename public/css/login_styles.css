@@ -108,7 +108,7 @@ h1 {
     box-shadow: 0px 10px 10px 0px rgb(59, 59, 59);
 }
 
-input[type="submit"]{
+input[type="submit"], #backButton{
     outline: none;
     border-radius: 25px;
     padding: 10px 0;
@@ -118,15 +118,21 @@ input[type="submit"]{
     color: white;
     background-color: var(--brown);
     cursor: pointer;
+    margin: 2px 0 2px 0
 }
 
 #login{   
     width: 100%;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover, #backButton:hover{
     background-color:  var(--green);
     color: var(--yellow);
+}
+
+#backButton{
+    text-align: center;
+    padding: 5px 175px 5px 175px;
 }
 
 a{

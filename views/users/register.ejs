@@ -62,9 +62,18 @@
             </div>
                
             <input type="submit" value="register" id="register">
-           
+            <div>
+                <button id="backButton">back</button>
+            </div>
         </div>
         </form>
     <!-- <script src="../js/main.js"></script> -->
+    <script>
+        var back = document.getElementById("backButton");
+        
+        back.addEventListener("onclick", function(){
+            window.location.href = "/views/index.ejs";
+        })
+    </script>
     </body>
 </html>
